@@ -1,6 +1,6 @@
 import { dataSeries } from "./Data.js";
 var seriesTbody = document.getElementById('seriesTV'); // Nodo tbody que tiene el id="seriesTV"
-var avgSeasonNumber = document.getElementById('average');
+var avgSeasonNumber = document.getElementById('avg-seasons');
 renderSeriesInTable(dataSeries);
 avgSeasonNumber.innerHTML = "".concat(seasonsAverage(dataSeries));
 /* Lee los datos de un arreglo de objetos series y finalmente lo despliega en la tabla de series actuales (DOM). */
@@ -8,7 +8,7 @@ function renderSeriesInTable(series) {
     console.log('Desplegando programas de televisión y series');
     series.forEach(function (serie) {
         var trElement = document.createElement("tr");
-        trElement.innerHTML = "<td>".concat(serie.id, "</td>");
+        trElement.innerHTML = "<td>".concat(serie.id, "</td> <td>").concat(serie.name, "</td> <td>").concat(serie.channel, "</td> <td>").concat(serie.seasons, "</td>");
         seriesTbody.appendChild(trElement);
     });
 }

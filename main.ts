@@ -2,7 +2,7 @@ import { Serie } from "./Serie.js";
 import { dataSeries } from "./Data.js";
 
 const seriesTbody: HTMLElement = document.getElementById('seriesTV')!; // Nodo tbody que tiene el id="seriesTV"
-const avgSeasonNumber: HTMLElement= document.getElementById('average')!;
+const avgSeasonNumber: HTMLElement= document.getElementById('avg-seasons')!;
 
 renderSeriesInTable(dataSeries);
 avgSeasonNumber.innerHTML = `${seasonsAverage(dataSeries)}`
