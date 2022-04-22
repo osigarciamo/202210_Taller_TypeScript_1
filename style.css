@@ -4,12 +4,18 @@ body{
 
 h1{
     color: darkblue;
-    text-align: center;
+    text-align: right;
+    border-color: saddlebrown;
   }
 
 thead{
     background-color: aliceblue;
     font-style: oblique;
+    text-align: center;
+    border-color: rgb(52, 75, 118);
+}
+tbody{
+  text-align: center;
 }
 
 .table-title{

@@ -8,31 +8,32 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <script src="main.js"></script>
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <div>
-                        <h1 id="table-title">TV Series</h1>
-                        <img class = "image1" src="https://www.proandroid.com/wp-content/uploads/2017/04/Series-TV.png">
-                    </div>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Name</th>
-                                <th>Channel</th>
-                                <th>Seasons</th>
-                            </tr>
-                        </thead>
-                        <tbody id="series">
-                        </tbody>
-                    </table>
-                    
-                    <div class="avg-seasons">
-                        <span style="font-size:115%"> Seasons average: <span id="avg-seasons"></span></span>
-                    </div>
-
-                </div>
+              <div class="col">
+                <h1 id="table-title">TV Series</h1>
+              </div>
+              <div class="col">
+                <img class = "image1" src="https://www.proandroid.com/wp-content/uploads/2017/04/Series-TV.png">
+              </div>
+            </div>
+        </div>
+        <div class="container">
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Channel</th>
+                    <th scope="col">Seasons</th>
+                  </tr>
+                </thead>
+                <tbody id = "series">
+                </tbody>
+              </table>
+            <div class="average">
+                <span style="font-size:115%"> Seasons average: <span id="avg-seasons"></span>
             </div>
         </div>
         <script type="module" src="./scripts/serie.js"></script>

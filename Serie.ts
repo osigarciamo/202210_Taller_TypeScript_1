@@ -1,4 +1,4 @@
-/* Exporta y crea la clase Serie */
+/* Crea la clase Serie */
 export class Serie {
     // Atributos de la clase serie
     id: number;
