@@ -1,0 +1,21 @@
+body{
+    background-color: lightblue;
+  }
+
+h1{
+    color: darkblue;
+    text-align: center;
+  }
+
+thead{
+    background-color: aliceblue;
+    font-style: oblique;
+}
+
+.table-title{
+    text-align: center;
+}
+.image1{
+    width: 100px;
+    float: right;
+  }
